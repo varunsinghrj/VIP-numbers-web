@@ -25,7 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
         hamburger.addEventListener("click", () => {
             navLinks.classList.toggle("active"); // Toggle the active class to show/hide the menu
         });
+    });// JavaScript to toggle the navigation menu
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+    
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
     });
+// Toggle the menu when the hamburger icon is clicked
+document.getElementById('hamburger').addEventListener('click', function() {
+  var navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('active');
+});
+  
     
     
     

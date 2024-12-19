@@ -119,37 +119,38 @@ body {
     font-weight: 500;
 }
 
-/* Mobile Menu */
+/* Mobile Menu (cleaned) */
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide navigation links by default on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
+  .nav-links {
+      display: none; /* Initially hide nav links */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-    .nav-links.active {
-        display: flex; /* Show the menu when it's active */
-    }
+  .nav-links.active {
+      display: flex; /* Show menu when active */
+  }
 
-    .menu-links {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px 0;
-    }
+  .menu-links {
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px 0;
+  }
 
-    .hamburger {
-        display: block; /* Show hamburger icon on mobile */
-    }
+  .hamburger {
+      display: block; /* Show hamburger icon */
+  }
 
-    .icons {
-        display: none; /* Optionally hide the icons on mobile */
-    }
+  .icons {
+      display: none; /* Optionally hide icons on mobile */
+  }
 }
+
 
 
 /* Responsive Design */
@@ -749,7 +750,7 @@ header {
   }
   
   .blog {
-    width: 350px;
+    width: 320px;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
